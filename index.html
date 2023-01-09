@@ -26,140 +26,152 @@
   </head>
   <body>
     <div class="container">
-      <div class="entercity">
-        <form id="new-city">
-          <div class="row">
-            <div class="col-8">
-              <input
-                type="text"
-                placeholder="Enter city"
-                class="form-control"
-                id="very-new-city"
-              />
+      <div class="appContainer">
+        <div class="entercity">
+          <form id="new-city">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="text"
+                  placeholder="Enter city"
+                  class="form-control"
+                  id="very-new-city"
+                />
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-secondary">Search</button>
+                <button
+                  type="submit"
+                  class="btn btn-warning"
+                  id="current-button"
+                >
+                  Current
+                </button>
+              </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-secondary">Search</button>
-              <button type="submit" class="btn btn-warning" id="current-button">
-                Current
-              </button>
+          </form>
+        </div>
+        <div class="row">
+          <h5 class="tempMarkers">
+            <span class="celsiusTemp" id="celsius-temp">℃</span> |
+            <span class="fahrenheitTemp" id="fahrenheit-temp">℉</span>
+          </h5>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <h1 id="temperature"></h1>
+          </div>
+
+          <div class="col">
+            <h6>
+              <ul>
+                <li id="humidity">Humidity: 90%</li>
+                <li id="wind">Wind: 7 m/s</li>
+              </ul>
+            </h6>
+          </div>
+
+          <div class="col">
+            <div class="currentCity">
+              <h2 id="current-city"></h2>
+              <h5 class="currentTime">
+                <span id="current-time">Tuesday, 11:30 </span>
+                <br />
+                <span id="weather-descr">Light snow showers</span>
+              </h5>
             </div>
           </div>
-        </form>
-      </div>
-
-      <div class="row">
-        <h5 class="tempMarkers">
-          <span class="celsiusTemp" id="celsius-temp">℃</span> |
-          <span class="fahrenheitTemp" id="fahrenheit-temp">℉</span>
-        </h5>
-      </div>
-
-      <div class="row">
-        <div class="col-4">
-          <h1 id="temperature"></h1>
         </div>
 
-        <div class="col">
-          <h6>
-            <ul>
-              <li id="humidity">Humidity: 90%</li>
-              <li id="wind">Wind: 7 m/s</li>
-            </ul>
-          </h6>
-        </div>
+        <div class="row">
+          <div class="col">
+            <div class="days">
+              <p>
+                Tue
+                <br />
+                <i class="fa-solid fa-cloud"></i>
+                <br />
+                <span class="dayTemperature">-2</span
+                ><span class="nightTemperature">-6</span>
+              </p>
+            </div>
+          </div>
 
-        <div class="col">
-          <div class="currentCity">
-            <h2 id="current-city"></h2>
-            <h5 class="currentTime">
-              <span id="current-time">Tuesday, 11:30 </span>
-              <br />
-              <span id="weather-descr">Light snow showers</span>
-            </h5>
+          <div class="col">
+            <div class="days">
+              <p>
+                Wed
+                <br />
+                <i class="fa-regular fa-snowflake"></i>
+                <br />
+                <span class="dayTemperature">-5</span
+                ><span class="nightTemperature">-11</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="days">
+              <p>
+                Thu
+                <br />
+                <i class="fa-solid fa-cloud"></i>
+                <br />
+                <span class="dayTemperature">-4</span
+                ><span class="nightTemperature">-10</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="days">
+              <p>
+                Fri
+                <br />
+                <i class="fa-solid fa-cloud-sun"></i>
+                <br />
+                <span class="dayTemperature">-7</span
+                ><span class="nightTemperature">-9</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="days">
+              <p>
+                Sat
+                <br />
+                <i class="fa-solid fa-cloud-sun"></i>
+                <br />
+                <span class="dayTemperature">-8</span
+                ><span class="nightTemperature">-11</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="days">
+              <p>
+                Sun
+                <br />
+                <i class="fa-regular fa-snowflake"></i>
+                <br />
+                <span class="dayTemperature">-3</span
+                ><span class="nightTemperature">-7</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="days">
-            <p>
-              Tue
-              <br />
-              <i class="fa-solid fa-cloud"></i>
-              <br />
-              <span class="dayTemperature">-2</span
-              ><span class="nightTemperature">-6</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="days">
-            <p>
-              Wed
-              <br />
-              <i class="fa-regular fa-snowflake"></i>
-              <br />
-              <span class="dayTemperature">-5</span
-              ><span class="nightTemperature">-11</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="days">
-            <p>
-              Thu
-              <br />
-              <i class="fa-solid fa-cloud"></i>
-              <br />
-              <span class="dayTemperature">-4</span
-              ><span class="nightTemperature">-10</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="days">
-            <p>
-              Fri
-              <br />
-              <i class="fa-solid fa-cloud-sun"></i>
-              <br />
-              <span class="dayTemperature">-7</span
-              ><span class="nightTemperature">-9</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="days">
-            <p>
-              Sat
-              <br />
-              <i class="fa-solid fa-cloud-sun"></i>
-              <br />
-              <span class="dayTemperature">-8</span
-              ><span class="nightTemperature">-11</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="days">
-            <p>
-              Sun
-              <br />
-              <i class="fa-regular fa-snowflake"></i>
-              <br />
-              <span class="dayTemperature">-3</span
-              ><span class="nightTemperature">-7</span>
-            </p>
-          </div>
-        </div>
+      <div class="openSource">
+        <a href="https://github.com/smilg-m/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Miglė Vasiliauskaitė
       </div>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
